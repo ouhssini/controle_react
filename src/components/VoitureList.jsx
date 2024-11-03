@@ -66,7 +66,7 @@ const VoitureList = () => {
       : null;
 
   return (
-    <div className="p-6 px-20">
+    <div className="p-6 md:px-20">
       <h1 className="text-2xl font-bold mb-4">Liste des Voitures</h1>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 xl:grid-cols-4 gap-4  mb-10">
         {voitures.map((voiture) => (
@@ -81,9 +81,9 @@ const VoitureList = () => {
       {total === 0 ? (
         <p className="mb-4">Aucune voiture disponible.</p>
       ) : (
-        <div className="flex justify-between px-10 gap-5  bg-white py-6 border-2 border-gray-300 shadow-md rounded-md">
+        <div className="flex flex-wrap justify-between px-4 md:px-10 gap-5  bg-white py-6 border-2 border-gray-300 shadow-md rounded-md">
         
-          <div  className="flex-1">
+          <div  className="flex-1 basis-[250px]">
           <p className="mb-4">Nombre total des voitures: {total}</p>
           <h2 className="text-xl font-semibold mb-2">
             Nombre total des voitures par marque:
