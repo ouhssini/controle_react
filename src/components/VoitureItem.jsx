@@ -10,7 +10,7 @@ const VoitureItem = ({voiture,setVoitures,voitures}) => {
 
 
   return (
-    <div className="max-w-sm rounded  overflow-hidden shadow-lg">
+    <div className="max-w-sm rounded sm:mx-auto overflow-hidden shadow-lg">
       <img className={`${filter ? "grayscale" : ""} w-full`} src={voiture.image} alt={voiture.marque} />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{voiture.marque  + " "  + voiture.modele} </div>

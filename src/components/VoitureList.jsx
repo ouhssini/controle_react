@@ -105,7 +105,7 @@ const VoitureList = () => {
               <h2 className="text-xl font-semibold mb-2">
                 Voiture la plus chere:
               </h2>
-              <p className="mb-4">
+              <p className="mb-4 text-sm md:text-base">
                 Marque:{" "}
                 {maxPrix.marque +
                   "-" +
